@@ -17,7 +17,7 @@ defmodule NestedWeb.Router do
   scope "/", NestedWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", PageLive
   end
 
   # Other scopes may use custom stacks.
